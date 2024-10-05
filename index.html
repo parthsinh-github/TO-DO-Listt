@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <button id="themeToggleBtn" class="theme-toggle-btn">
+            <span id="themeIcon">🌞</span> 
+        </button>
+        <h1 class="text-center">To-Do List</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="taskInput" class="form-control" placeholder="Add a new task" aria-label="New Task">
+            <div class="input-group-append">
+                <button class="btn btn-primary" id="addTaskBtn">Add</button>
+            </div>
+        </div>
+        <ul class="list-group" id="taskList"></ul>
+
+        <h2 class="mt-4">Completed To-Dos</h2>
+        <ul class="list-group" id="completedTasksList"></ul>
+       
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
